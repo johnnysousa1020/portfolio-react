@@ -1,0 +1,20 @@
+.projects{
+    padding: 6rem 2rem;
+    background: #020617;
+    min-height: 100vh;
+}
+
+.projects h2{
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+.projects-grid{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
