@@ -4,6 +4,7 @@ import gastosImg from "../assets/gastos.png"
 import hospedagemImg from "../assets/hotel.png"
 import churrascariaImg from "../assets/churrascaria.png"
 import pizzariaImg from "../assets/pizzaria.png"
+import techshp from "../assets/techshop.png"
 
 const projects = [
     {
@@ -59,6 +60,15 @@ const projects = [
         image: hospedagemImg,
         github: "https://github.com/johnnysousa1020/aurora-stay",
         demo: "https://johnnysousa1020.github.io/aurora-stay/"
+    },
+    {
+        id: 7,
+        title: "TechShop",
+        description: "Projeto de e-commerce desenvolvido com foco em experiência do usuário, responsividade e funcionalidades modernas.",
+        technologies: ["React", "JavaScript", "CSS"],
+        image: techshp,
+        github: "https://github.com/johnnysousa1020/techshop",
+        demo: "https://johnnysousa1020.github.io/techshop/"
     },
 ]
 
