@@ -1,3 +1,180 @@
+.projects {
+    padding: 8rem 2rem;
+    background: #020617;
+    min-height: 100vh;
+}
+
+/* CABEÇALHO DA SEÇÃO */
+
+.projects-header {
+    max-width: 700px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 1rem;
+
+    color: #38bdf8;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.projects-header h2 {
+    margin: 0 0 1rem;
+
+    color: #fff;
+    font-size: clamp(2.2rem, 5vw, 3rem);
+    line-height: 1.2;
+}
+
+.projects-header h2 span {
+    color: #38bdf8;
+}
+
+.projects-header p {
+    margin: 0;
+
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* PROJETOS EM DESTAQUE */
+
+.featured-projects {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+/*
+    O primeiro projeto terá maior destaque.
+    Como o CineMind será colocado primeiro,
+    ele ocupará toda a largura.
+*/
+
+.featured-projects .project-card:first-child {
+    grid-column: 1 / -1;
+}
+
+
+/* OUTROS PROJETOS */
+
+.other-projects {
+    max-width: 1100px;
+    margin: 7rem auto 0;
+}
+
+.other-projects-header {
+    margin-bottom: 2.5rem;
+}
+
+.other-projects-header h3 {
+    margin: 0 0 0.7rem;
+
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.other-projects-header p {
+    max-width: 600px;
+    margin: 0;
+
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* GRID DOS OUTROS PROJETOS */
+
+.projects-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.8rem;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .featured-projects {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-projects .project-card:first-child {
+        grid-column: auto;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .projects {
+        padding: 6rem 1.2rem;
+    }
+
+    .projects-header {
+        margin-bottom: 3rem;
+    }
+
+    .projects-header h2 {
+        font-size: 2rem;
+    }
+
+    .projects-header p {
+        font-size: 0.9rem;
+    }
+
+    .featured-projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .other-projects {
+        margin-top: 5rem;
+    }
+
+    .other-projects-header {
+        margin-bottom: 2rem;
+    }
+
+    .other-projects-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .other-projects-header p {
+        font-size: 0.9rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+
+
+
+
+/*
 .projects{
     padding: 6rem 2rem;
     background: #020617;
@@ -18,3 +195,4 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
+    */
